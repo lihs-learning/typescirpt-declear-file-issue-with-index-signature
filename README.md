@@ -47,3 +47,19 @@ Found 3 errors in the same file, starting at: ../project-a/index.d.ts:2
 
 Output of project-a shows the same errors of project-b.
 
+## Resolved
+
+`project-a/tsconfig.json`
+
+```diff
++  "include": [
++    "index.d.ts",
++  ]
+```
+
+`project-a/package.json`
+
+```diff
+-    "check-type": "tsc index.d.ts"
++    "check-type": "tsc --noEmit"
+```
