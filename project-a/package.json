@@ -1,0 +1,13 @@
+{
+  "name": "project-a",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "check-type": "tsc index.d.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.30",
+    "typescript": "^5.4.2"
+  }
+}
